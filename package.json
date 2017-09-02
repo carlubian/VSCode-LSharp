@@ -1,0 +1,26 @@
+{
+    "name": "vscode-lsharp",
+    "displayName": "VSCode-LSharp",
+    "description": "Provides support for L# source files within Visual Studio Code",
+    "version": "1.0.0",
+    "publisher": "carlubian",
+    "engines": {
+        "vscode": "^1.13.0"
+    },
+    "categories": [
+        "Languages"
+    ],
+    "contributes": {
+        "languages": [{
+            "id": "ls",
+            "aliases": ["L#", "ls"],
+            "extensions": [".ls"],
+            "configuration": "./language-configuration.json"
+        }],
+        "grammars": [{
+            "language": "ls",
+            "scopeName": "source.lsharp",
+            "path": "./syntaxes/ls.tmLanguage.json"
+        }]
+    }
+}
